@@ -8,8 +8,8 @@ export const queryResolvers: IResolvers = {
         helloWithName: (
         _: void,
         args: { name: string },
-        context: any,
-        info: object
+        context: unknown,
+        info: unknown
         ) => {
         return `Hola ${args.name}`;
         },

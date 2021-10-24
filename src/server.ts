@@ -1,10 +1,8 @@
-import { makeExecutableSchema } from "@graphql-tools/schema";
-import { ApolloServer, gql } from "apollo-server-express";
+import { ApolloServer } from "apollo-server-express";
 import compression from "compression";
 import express, { Application } from "express";
 import { GraphQLSchema } from "graphql";
 import { createServer, Server } from "http";
-import schema from './schema/index';
 
 class GraphQLServer {
   // Propiedades

@@ -2,7 +2,7 @@ import { IResolvers } from '@graphql-tools/utils';
 
 
 // Resolvers
-export const queryResolvers: IResolvers = {
+const queryResolvers: IResolvers = {
     Query: {
         hello: (): string => 'Hola graphQL!',
         helloWithName: (
@@ -16,3 +16,5 @@ export const queryResolvers: IResolvers = {
         peopleNumber: (): number => 143,
     },
 };
+
+export default queryResolvers;
